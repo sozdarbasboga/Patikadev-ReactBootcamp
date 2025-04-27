@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+
+
+    <h2>Example</h2>
+    <form>
+        <fieldset>
+            <legend>Kişisel:</legend>
+            <div>
+                <label for="fullname">İsim ve Soyisim:</label>
+                <input type="text" id="fullname ">
+            </div>
+            <div>
+                <label for="gender">Cinsiyet:</label>
+                <input type="radio" name="gender" id="male" value="male">Erkek
+                <input type="radio" name="gender" id="female" value="female">Kız
+            </div>
+            <div>
+                <label for="birthday">Doğum Tarihi :</label>
+                <input type="date" id="birthday">
+            </div>
+            <div>
+                <label for="city">Şehir:</label>
+                <select name="city" id="city">
+                    <option value="">Şehir</option>
+                    <optgroup label="Marmara">
+                        <option value="istanbul">İstanbul</option>
+                        <option value="Edirne">Edirne</option>
+                        <option value="Bursa">Bursa</option>
+                    </optgroup>
+                    <optgroup label="Ege">
+                        <option value="İzmir">İzmir</option>
+                        <option value="Manisa">Manisa</option>
+                        <option value="Aydın">Aydın</option>
+                    </optgroup>
+                    <optgroup label="Güney Doğu Anadolu">
+                        <option value="Mardin">Mardin</option>
+                        <option value="Diyarbakır">Diyarbakır</option>
+                        <option value="Batman">Batman</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label>Hobileri:</label>
+                <input type="checkbox" name="hobbies" id="hobbies" value="reading">Okuma
+                <input type="checkbox" name="hobbies" id="hobbies" value="painting">Resim Yapmak
+                <input type="checkbox" name="hobbies" id="hobbies" value="music">Müzik Dinlemek
+                <input type="checkbox" name="hobbies" id="hobbies" value="games">>Oyun Oynamak
+            </div>
+            <div>
+                <label for="CV">CV:</label>
+                <input type="file" id="CV" name="CV">"
+            </div>
+        </fieldset>
+        <div></div>
+        <fieldset>
+            <legend>İletişim:</legend>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email">
+            </div>
+            <div>
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone">
+            </div>
+            <div>
+                <label for="address">Adres:</label>
+                <textarea name="address" id="address" cols="30" rows="5"></textarea>
+
+            </div>
+        </fieldset>
+        <div>
+            <label for="password">Şifre:</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <button type="submit">Kayıt ol</button>
+            <button type="reset">Temizle</button>
+        </div>
+
+    </form>
+    <h2> HTML Input Types </h2>
+
+    <h3>Input Type Color </h3>
+    <input type="color">
+
+<h3>Input Type Number</h3>
+<input type="number">
+
+<h3>Input Type Range</h3>
+<input type="range"> 
+
+<h3>Input Type Time</h3>
+<input type="time">
+
+<h2>HTML Form Attributes</h2>
+
+<h3>The <code>readonly</code>Attribute</h3>
+<input type="text" value="Readonly" readonly>
+
+<h3>The <code>disabled</code> Attribute</h3>
+<input type="number" value="28" disabled>
+
+<h3>The <code>placeholder</code>Attribute</h3>
+<input type="tel" placeholder="547 4716" >
+
+</body>
+
+</html>

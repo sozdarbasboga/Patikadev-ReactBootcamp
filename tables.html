@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+</head>
+<body>
+    <h1>HTML Tables</h1>
+    <table>
+        <caption>Tables</caption>
+        <colgroup>
+            <col span="2" style="background-color: lightblue;">
+            <col style="background-color: lightgreen;">
+        </colgroup>
+
+<thead>
+<tr>
+<th>Pazartesi</th>
+<th>Salı</th>
+<th>Çarşamba</th>
+<th>Perşembe</th>
+<th>Cuma</th>
+<th>Cumartesi</th>
+<th>Pazar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">1</td>
+<td rowspan="2">3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+</tr>
+</tbody>
+<tfoot>
+    <tr>
+        <th colspan="7">Toplam</th>
+        <th>900</th>
+    </tr>
+</tfoot>
+    </table>
+</body>
+</html>
+
+HTML'de tablolar <table> etiketi ile oluşturulur. Bir tablo içerisinde, her bir satır <tr> (table row) etiketi
+     ile belirlenir. Bir satır içerisindeki her bir hücre ya <td> (table data) ya da
+ <th> (table header) etiketi ile belirlenir. <td> normal bir hücreyi temsil ederken, <th>
+     genellikle başlık hücrelerini temsil eder ve içerdiği metin genellikle kalın ve ortalanmıştır.

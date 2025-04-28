@@ -41,7 +41,12 @@ body {
     margin: 20px;
     border-radius: 5px;
   }
-  
+   form {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+   }
  
   
   

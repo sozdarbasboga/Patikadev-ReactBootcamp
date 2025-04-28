@@ -1,11 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sözdar'ın Sanat Günlüğü</title> <!-- Sayfa başlığı -->
+    <style>
+        body {
+            font-family: 'Georgia', serif; /* Yazı tipi */
+            margin: 0;
+            padding: 20px;
+            background: #f8f4f0;
+            color: #2c1810;
+            line-height: 1.6; /* Satır aralığı */
+        }
+
+        header {
+            background-color: rgb(218, 134, 180);
+            background-size: cover; /* Arka plan resmi */
+            color: white;
+            padding: 80px 20px;  
+            text-align: center; /* Metni ortala */
+            border-radius: 15px;
+            margin-bottom: 40px; 
+         
+        }
+
+        .post {
+            background: white;
+            padding: 30px;
+            margin-bottom: 40px; 
+            border-radius: 15px;  
+      
+        }
+
+        img {
+            max-width: 100%; /* Resim genişliği */
+            height: auto; /* Resim yüksekliği */
+            border-radius: 12px; /* Resim köşelerini yuvarlar */
+            margin: 20px 0; /* Resimler arasında boşluk bırakır */
+        
+        }
+
+        a {
+            color: #8b4513;                /* Link rengi - kahverengi ton */
+            text-decoration: none;    
+           
+        }
+
+        a:hover {
+            color: #d2691e;                /* Fare üzerine gelindiğinde link rengi değişir*/
+            border-bottom: 1px solid #d2691e;  /* Alt çizgi stili değişir */
+        }
+
+        .tags {
+            margin-top: 20px; /* üst kısımdan 20 px boşluk bırakır */
+        }
+
+        .tag {
+            background: #e6d5c3; /* arkaplan rengi */
+            padding: 6px 12px; /* etiketlerin etrafındaki boşluk */
+            border-radius: 20px; /* etiketlerin köşelerini yuvarlar */
+            font-size: 0.9em; /* yazı boyutu */
+            margin-right: 8px; /* etiketler arasında boşluk bırakır */
+            color: #5c3317; /* yazı rengi */
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: #4a3228;
+        }
+
+        .artwork-details { /* Sanat eseri detayları için özel stil kutusu */
+            background: #f9f5f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Sözdar'ın Sanat Günlüğü</h1>      <!-- Ana başlık -->
+        <p>Resim, sanat ve ilham üzerine düşünceler</p>
+    </header>
+
+    <main>
+        <article class="post">
+            <h2>Sulu Boya Tekniğinde İlk Adımlarım</h2>    <!-- Blog başlığı -->
+            <img src="sulu-boyai-004.jpg"  alt="Sulu boya çalışması">    <!-- Blog görseli -->         
+                 
+            <p>Bu hafta sulu boya tekniğini keşfetmeye başladım. İşte öğrendiğim temel teknikler:</p>   
+            <ul> <!-- Sırasız Liste -->
+                <li>Renk geçişleri ve katmanlar</li>  
+                <li>Fırça teknikleri ve su kontrolü</li>
+                <li>Kağıt seçimi ve hazırlığı</li>
+                <li>Işık-gölge dengesi</li>
+            </ul> 
+            <div class="artwork-details"> <!-- Sanat eserinin detayları -->
+                <p>Kullandığım Malzemeler:</p>  
+                <ul> <!-- Sırasız Liste -->
+                    <li>Winsor & Newton sulu boya seti</li>
+                    <li>Arches sulu boya kağıdı (300g)</li>
+                    <li>Çeşitli kalınlıkta fırçalar</li>
+                </ul>
+            </div>
+            <p>Daha detaylı teknik bilgiler için <a href="https://www.artistsnetwork.com/watercolor">Artists Network</a>   
+               sayfasını inceleyebilirsiniz.</p>  <!-- href özelliği ile harici bağlantı -->
+            <div class="tags">  <!--özel stil etiketi uygulanır bu sayede içeriğin konuları tanımlanır ve filtreleme ve arama için kullanılır-->
+                <span class="tag">Sulu Boya</span>  <!--etiketler span elementi içinde class="tag" ile özel stil ve görünüm , tıklanabilir hale gelir-->
+                <span class="tag">Teknik</span>
+                <span class="tag">Malzeme</span>
+            </div>
+        </article>
+
+        <article class="post">  <!--blog yazısı stilleri uygulanır-->
+            <h2>Van Gogh İzlenimlerim</h2>  
+            <img src="blog2.jpg"
+                 alt="Van Gogh tablosu ">
+            <p>Van Gogh  İşte en sevdiğim eserleri:</p> <!--Başlık-->
+            <ol>                                 <!--Sıralı Liste-->
+                <li>Ayçiçekleri (1889)</li>
+                <li>Yıldızlı Gece (1889)</li>
+                <li>Patates Yiyenler (1885)</li>
+                <li>Yatak Odası (1888)</li>
+            </ol>
+            <p>Sanatçının hayatı ve eserleri hakkında daha fazla bilgi için  <!--Başlık-->
+               <a href="https://www.vangoghmuseum.nl">Van Gogh Müzesi</a> 
+               websitesini ziyaret edebilirsiniz.</p>
+            <div class="tags">                   <!--özzel görünüm ve hover efektleri, tıklanabilir etiketler için temel yapı-->
+                <span class="tag">Müze</span>
+                <span class="tag">Van Gogh</span>
+                <span class="tag">Empresyonizm</span>
+            </div>
+        </article>
+
+        <article class="post"> <!--blog yazısı stilleri uygulanır-->
+            <h2>Benim Karakalemim</h2>
+            <img src="sozdar.jpeg"       alt="Benim Karakalemim">       <!--Blog görseli-->
+                
+            <p>Burda da kendi karakalem maceralarımı paylaşıyorum ve ihtiyacınız olan şeyler:</p>
+            <ul>                             <!--Sırasız Liste-->
+                <li>Bir tane kalem</li>
+                <li>Kağıt</li>
+                <li>İlham veren bir müzik</li>
+                <li>Ve biraz zaman</li>
+            </ul>
+            <p>Başlangıç seviyesi için harika ipuçları bulabileceğiniz 
+               <a href="https://www.karakalem.info/karakalem-cizim-teknikleri-hakkinda-en-cok-sorulan-sorular/"> Karakalem.info</a> 
+               kesinlikle öneririm.</p>
+           
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sözdar'ın Sanat Günlüğü - Tüm hakları saklıdır.</p>
+    </footer>
 </body>
 </html>
+    

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds</title>
+</head>
+<style>
+    .c1{
+        background-color: aqua;
+    }
+    .c2{
+        background-color: orange;
+    }
+    
+    .c3{
+        height: 400px;
+        width: 300px;
+         background-image: url(../assets/images.jpg);
+     /*   background-size: cover;*/
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 300px 200px;
+        border: 1px solid gray;
+       
+    }
+    .c4{
+        height: 400px;
+        width: 300px;
+         background: orange url(../assets/images.jpg); 
+     /*   background-size: cover;*/
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 220px 250px;
+        border: 1px solid gray;
+        
+    }
+
+</style>
+<body>
+    <h1>CSS Backgrounds</h1>
+    <h2>background-color</h2>
+    <p class="c1" >The background-color property specifies the background color of an element.</p>
+    <p class="c2">The background-color property can take a color name, an RGB value, or a HEX value.</p></p>
+
+    <h2>background-image</h2>
+    <div class="c3"></div>
+    <h2>background</h2>
+    <div class="c4"></div>
+
+</body>
+</html>

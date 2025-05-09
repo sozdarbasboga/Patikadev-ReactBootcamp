@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo</title>
+    <style>
+        a:hover{
+            color: violet;
+        }
+        a:active{
+            color:coral;
+        }
+        input:disabled{
+            background-color: lightgrey;
+        }
+        input:not(.none){
+            background-color: firebrick !important;
+        }
+        li:nth-child(2n){
+            background-color:aquamarine;
+        }
+        .c1::first-line{
+            color:coral;
+        }
+        .c2::before,
+        .c2::after{
+            content: "";
+            width: 10px;
+            height: 10px;
+            display:inline-block;
+            background-color: cornflowerblue;
+            border-radius: 10px;
+            
+        }
+        .c2::before{
+            margin-right: 5px;
+        }
+        .c2::after{
+            margin-left: 5px;
+        }
+        ::selection{
+            color: white;
+            background-color: mediumpurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo</h1>
+    <h2>CSS Pseudo Classes</h2>
+    <h3>:active</h3>
+    <p><a href="#"> Bağlantıya Tıkla</a></p>
+    <h2>:hover</h2>
+    <p><a href="#"> Bağlantı üzerine gel.</a></p>
+    <h2>:disabled</h2>
+    <input type="text" disabled>
+    <h2>:not(selector)</h2>
+    <input type="text" class="name">
+    <h2>:nth-child(n)</h2>
+<ul>
+<li>İstanbul</li>
+<li>İzmir</li>
+<li>Ankara</li>
+<li>Muğla</li>
+<li>Antalya</li>
+</ul>
+<h2>CSS Pseudo Elements</h2>
+<h3>::first-line</h3>
+<p class="c1">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus. 
+    Id necessitatibus dolore, dolorem eius optio animi, suscipit eveniet dolorum architecto odio consectetur 
+    consequuntur debitis quaerat nostrum et, iure eligendi! sit amet Lorem ipsum dolor sit amet consectetur, 
+     Vero cum autem nihil adipisci nesciunt corporis nam deserunt at quod dicta!  consectetur adipisicing
+     adipisicing elit. Quisquam, quae elit..</p>
+<h3>::before</h3>
+<p class="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam, quae
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis vel impedit 
+    veritatis excepturi ipsam assumenda velit, et beatae quaerat. .</p>
+
+    <h3>::selection</h3>
+    <p class="c3">Lorem ipsum dolor sit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates 
+    ab deserunt itaque quisquam vel ex commodi at dolorem deleniti consequatur asperiores eos facere,
+     voluptatum hic aspernatur. Odit perspiciatis eos molestiae! amet consectetur adipisicing elit. Quisquam, quae</p>
+   
+
+</body>
+</html>

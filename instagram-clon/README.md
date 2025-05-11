@@ -18,4 +18,3 @@ Bu proje Bootstrap 5 ve Font Awesome kullanılarak yapılmış bir Instagram kop
 
 ## Ekran Görüntüsü
 
-![Sitenin görüntüsü](screenshot.png)

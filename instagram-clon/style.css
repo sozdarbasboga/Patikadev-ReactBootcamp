@@ -1,0 +1,52 @@
+
+    body {
+      background-color: #fafafa;
+      padding-top: 80px;
+    }
+
+    .navbar {
+      height: 54px;
+    }
+
+    .navbar-brand {
+      margin-left: 192px;
+    }
+
+    .search-box::placeholder {
+      background: url('assets/search-icon.png') no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 20px;
+    }
+    .card-img-top {
+      max-height: 700px;
+      max-width: 100%;
+      object-fit: cover;
+   }
+
+
+    .middlearea {
+      max-height: 200px !important;
+    }
+
+    .stickysidebar {
+      position: sticky;
+      top: 80px;
+    }
+
+    .rightpanel {
+      background-color: white;
+      border: none;
+     
+    }
+    .tumunu-gor {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+
+
+
+
+  

@@ -24,6 +24,6 @@ Bu proje, daha önce CSS ile yaptığım blog sitesinin Bootstrap ile yeniden ta
 2. `index.html` dosyasını tarayıcıda aç.
 3. İçeriği kendi blog yazılarınla değiştirebilirsin.
 
-## Ekran Görüntüsü
 
-![Ekran Görüntüsü](ekran-goruntusu.png)
+
+

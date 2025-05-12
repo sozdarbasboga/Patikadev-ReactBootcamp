@@ -1,0 +1,51 @@
+
+body {
+  background-color: #f8f4f0;
+  font-family: 'Georgia', serif;
+  color: #2c1810;
+}
+
+.navbar-dark {
+  background-color: #222 ;
+  border-bottom: 2px solid #555;
+}
+
+
+.hero {
+  background-color: #6c757d;
+  color: gray;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+.card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(160, 3, 3, 0.05);
+  border-radius: 12px;
+}
+
+.card-img-top {
+  border-radius: 12px 12px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #000000;
+  font-family: 'Playfair Display', serif;
+}
+
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+}

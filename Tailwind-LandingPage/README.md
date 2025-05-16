@@ -20,9 +20,7 @@ Bu proje bir **Landing Page (Açılış Sayfası)** örneğidir. Proje tamamen *
 ## 📁 Dosya Yapısı
 
 - `index.html`: Ana sayfa
-- `team.html`: Ek sayfa (ekip)
-- `styles.css`: Tailwind CSS stil dosyası (isteğe bağlı)
-- `assets/`: Görseller ve diğer medya dosyaları
+
 
 
 

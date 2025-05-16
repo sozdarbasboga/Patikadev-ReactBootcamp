@@ -8,7 +8,7 @@ Bu proje bir **Landing Page (Açılış Sayfası)** örneğidir. Proje tamamen *
 - Tailwind CSS framework ile tamamen stilize edilmiş
 - Font Awesome 6 ikonları entegre
 - Form, grid, testimonial, kartlar ve footer içeren tam sayfa
-- Ek sayfa bağlantısı (örnek: `team.html`)
+
 
 ## 🛠 Kullanılan Teknolojiler
 

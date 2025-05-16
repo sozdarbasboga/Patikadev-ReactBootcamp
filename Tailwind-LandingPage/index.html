@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamba Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="flex items-center justify-between p-6 max-w-7xl mx-auto">
+      <div class="text-2xl font-bold text-purple-600">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
+        </svg>
+      </div>
+      <nav class="flex items-center space-x-4">
+        <a href="#" class="text-sm hover:underline">Link</a>
+        <a href="#" class="text-sm hover:underline">Link</a>
+        <a href="#" class="text-sm hover:underline">Link</a>
+        <button class="bg-purple-600 text-white px-4 py-1 rounded hover:bg-purple-700">Sign up</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto px-6 py-12">
+      <div class="bg-gray-100 p-8 rounded">
+        <h2 class="text-purple-600 text-sm font-semibold">Mamba design system</h2>
+        <h1 class="text-3xl font-bold leading-tight mt-2">Build it with Mamba</h1>
+        <p class="mt-4 text-gray-600 text-sm">Modular and versatile. The ultimate design toolkit for savvy technology startups.</p>
+        <form class="mt-6 space-y-4">
+          <input type="text" placeholder="Your name" class="w-full px-4 py-2 border rounded" />
+          <input type="email" placeholder="Email address" class="w-full px-4 py-2 border rounded" />
+          <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-700">Join the waitlist</button>
+        </form>
+      </div>
+      <div>
+        <img src="https://picsum.photos/600/400?random=1" alt="Stairs" class="rounded shadow" />
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="text-center py-16 bg-white">
+      <p class="text-xs text-purple-600 font-semibold tracking-wide">HOW IT WORKS</p>
+      <h2 class="text-3xl font-bold mt-2">Building with Mamba is simple</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-12 px-6">
+        <div class="bg-gray-100 p-6 rounded">
+          <div class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold mb-4">1</div>
+          <p class="font-bold">Nulla.</p>
+          <p class="text-sm text-gray-700">Nostrum, corrupti blanditiis. Illum, architecto?</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded">
+          <div class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold mb-4">2</div>
+          <p class="font-bold">Accusantium.</p>
+          <p class="text-sm text-gray-700">Vitae saepe atque neque sunt eius dolor veniam alias debitis?</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded">
+          <div class="w-6 h-6 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold mb-4">3</div>
+          <p class="font-bold">Maxime.</p>
+          <p class="text-sm text-gray-700">Expedita temporibus culpa reprehenderit doloribus consectetur odio!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image and Testimonial -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto px-6 pb-16">
+      <div>
+        <img src="https://picsum.photos/600/400?random=2" alt="City" class="rounded shadow" />
+      </div>
+      <div class="flex flex-col justify-center bg-gray-100 p-8 rounded">
+        <div class="text-purple-600 mb-4">
+          <i class="fas fa-quote-left text-2xl"></i>
+        </div>
+        <p class="italic text-center text-sm">“Et, dignissimos obcaecati. Recusandae praesentium doloribus vitae? Rem unde atque mollitia!”</p>
+        <p class="text-center font-semibold mt-4">Leroy Jenkins</p>
+        <p class="text-center text-xs text-gray-500">CEO of Company Co.</p>
+      </div>
+    </section>
+
+    <!-- Create with us -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-2xl font-bold mb-2">Create with us</h2>
+      <p class="text-gray-700 mb-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt facilis quod accusantium beatae cum nam adipisci reiciendis omnis possimus error quo animi voluptas magni.</p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-12">
+        <img src="https://picsum.photos/600/400?random=3" alt="Desert" class="rounded shadow" />
+        <div class="bg-white p-6 rounded shadow">
+          <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Business</span>
+          <h3 class="font-bold text-lg mt-2">Curating a workplace that inspires team movement</h3>
+          <p class="text-xs text-gray-500 mt-2">November 30, 2020<br>By Leroy Jenkins</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-100 p-4 rounded">Panel-based blocks. Flexible panels that are perfect for building functional layouts.</div>
+        <div class="bg-gray-100 p-4 rounded">Responsive design. Panels look great no matter the device.</div>
+        <div class="bg-gray-100 p-4 rounded">Premium support. Join over 50 000 satisfied customers who use our templates.</div>
+      </div>
+    </section>
+
+    <!-- Team Help -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-2xl font-bold">Our team is here to help you.</h2>
+        <a href="team.html" class="text-sm text-purple-600 hover:underline">Meet our crew &gt;</a>
+        <div class="mt-6">
+          <img src="https://picsum.photos/800/300?random=4" alt="Team" class="rounded shadow mx-auto">
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-6 mt-16">
+      <div class="max-w-7xl mx-auto px-6 flex items-center justify-between text-sm text-gray-500">
+        <span>Mamba</span>
+        <div class="space-x-4">
+          <a href="#" class="hover:text-gray-700"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="hover:text-gray-700"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-gray-700"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -22,15 +22,9 @@ Bu proje, kullanıcıya günün saatine göre dinamik bir karşılama mesajı ve
 
 ## Ekran Görüntüleri
 
-Açık Tema:
-
-![Açık Tema](.saat1.png)
-
-Koyu Tema:
-
+![Açık Tema](./saat1.png)
 ![Koyu Tema](./saat2.png)
 
 ---
-
 **Hazırlayan:**  
 [Sözdar Başboğa]

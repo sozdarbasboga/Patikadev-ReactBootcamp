@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Loops</title>
+</head>
+<body>
+    <script>
+    const age = 20;
+    if (age === 18) {
+        console.log('she is a teenager');
+    } else if (age > 18) {
+        console.log('she is an adult');
+    } else {
+        console.log('she is a child');
+    }
+
+//switch case
+
+    let day = new Date().getDay(); 
+
+    let dayName;
+
+    switch (day) {
+      case 0:
+        dayName = "Pazar";
+        break;
+      case 1:
+        dayName = "Pazartesi";
+        break;
+      case 2:
+        dayName = "Salı";
+        break;
+      case 3:
+        dayName = "Çarşamba";
+        break;
+      case 4:
+        dayName = "Perşembe";
+        break;
+      case 5:
+        dayName = "Cuma";
+        break;
+      case 6:
+        dayName = "Cumartesi";
+        break;
+      default:
+        dayName = "Geçersiz gün";
+    }
+
+    console.log("Bugün günlerden:", dayName);
+ 
+
+// for loop
+    for (let i = 0; i < 10; i++) {
+        console.log(i);
+    }
+
+//while loop
+    let i = 0;
+    while (i < 10) {
+        console.log(i);
+        i++;
+    }
+
+//do-while loop
+    let j = 0;
+    do {
+        console.log(j);
+        j++;
+    } while (j < 10);
+    
+    </script>
+</body>
+</html>

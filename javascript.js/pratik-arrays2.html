@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Numbers Dizisi Örneği</title>
+</head>
+<body>
+  <h1>JavaScript Numbers Dizisi</h1>
+
+  <script>
+   
+    let numbers = [10, 20, 30, 40, 50];
+    numbers.push(60);  
+    numbers.pop();     
+
+    console.log("For döngüsü ile yazdır:");
+    for (let i = 0; i < numbers.length; i++) {
+      console.log(numbers[i]);
+    }
+
+    console.log("forEach metodu ile yazdır:");
+    numbers.forEach(function(num) {
+      console.log(num);
+    });
+  </script>
+</body>
+</html>

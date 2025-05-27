@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pratik Ödevi</title>
+</head>
+<body>
+
+  <div id="myDiv">Bu içerik JavaScript ile değişecek.</div>
+
+  <button onclick="changeContent()">İçeriği Değiştir</button>
+
+  <button onclick="showAlert()">Alert Göster</button>
+
+  <script>
+    
+    function changeContent() {
+      document.getElementById("myDiv").innerHTML = "İçerik başarıyla değiştirildi!";
+    }
+
+    function showAlert() {
+      alert("Butona tıkladınız!");
+    }
+  
+
+// Pratik Ödev
+console.log("Tarayıcı Dili:", navigator.language);
+
+console.log("Mevcut URL:", location.href);
+
+location.href = "https://www.google.com";
+
+console.log("Ekran Genişliği:", screen.width);
+console.log("Ekran Yüksekliği:", screen.height);
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Javascript Objects</title>
+</head>
+<body>
+    <h1>Javascript Objects</h1>
+    <script>
+
+        const user={
+            name:'John',
+            surname:'Doe',
+            age:28,
+            job:'software developer',
+            hobbies:['running','tennis'],
+            admin:false,
+            fullname:function(){
+                return this.name + ' ' + this.surname;
+            }
+        }
+
+        user.contry='USA';
+        //delete user.contry;
+
+      Object.assing(user,{
+            city:'New York'
+        });
+        console.dir(user);
+        console.log('Object.keys()',Object.keys(user));
+        console.log('Object.values()',Object.values(user));
+        console.log('Object.entries()',Object.entries(user));
+        console.log('user.name',user.name);
+        console.log('user.fullname()',user.fullname());
+
+    </script>
+    
+</body>
+</html>

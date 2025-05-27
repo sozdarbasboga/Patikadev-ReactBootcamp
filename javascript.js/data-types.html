@@ -6,6 +6,59 @@
     <title>JavaScript Data Types</title>
 </head>
 <body>
+    <script>
+        let str="Jhon";
+        console.log(str,str); 
+
+        let int=28;
+        console.log(int,int);
+
+        let bool=true;
+        console.log(boo,bool);
+
+        let bigint=BigInt(1234567890123456789012345678901234567890);
+        console.log(bigint,bigint);
+
+        let symbol=Symbol("Aras");
+        console.log(symbol,symbol);
+
+        let x;
+        console.log(typeof x,x);
+
+        let y = null;
+        console.log(typeof y,y);
+
+        let obj = {
+            name: "Jhon", 
+            age: 28,
+            admin:true};
+        console.log(typeof obj,obj);
+       
+        //Immutable
+        let name="jhon";
+        let cloneName=name;
+        cloneName="Doe";
+        console.log(immutable,name,cloneName);
+
+        //Mutable
+        let user={
+            name:"Jhon",
+        };
+
+        let cloneUser=user;
+        cloneUser.name="Aras";
+        console.log(mutable,user,cloneUser);
+
+
+
+
+
+
+
+
+
+
+    </script>
     
 </body>
 </html>

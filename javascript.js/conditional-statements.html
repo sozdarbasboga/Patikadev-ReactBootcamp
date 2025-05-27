@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <script>
+        const age = 18;
+        console.group('Comparison Operators');
+        console.log(age > 17 ? 'Değer büyüktür.' : 'Değer büyük değildir.');
+        console.log(age < 17 ? 'Değer küçüktür.' : 'Değer küçük değildir.');
+        console.log(age == 17 ? 'Değer eşittir.' : 'Değer eşit değildir.');
+        console.log(age === '17' ? 'Değer ve tür eşittir.' : 'Değer eşit değildir.');
+        console.groupEnd();
+
+        /*Logical Operators*/
+        const visa = false;
+        const permission = true;
+
+        console.group('Logical Operators');
+        if (visa) {
+            if (age >= 18 || permission) {
+                console.log('Türkiye hoşgeldiniz');
+            } else {
+                console.log('Ebeveynlerinizin izni olmadan Türkiye giremezsiniz');
+            }
+        } else {
+            console.log('Ülkeye giremezsiniz. ');
+        }
+
+        if (visa && age >= 18 || permission) {
+            console.log('Türkiye hoşgeldiniz');
+        } else if (visa && age < 18 || permission) {
+            console.log('Türkiye hoşgeldiniz');
+        } else if (visa && age < 18 && !permission) {
+            console.log('Ebeveyninizin izni olmadan Türkiye giremezsiniz. ');
+        } else {
+            console.log('Ülkeye giremezsiniz. ');
+        }
+        console.groupEnd();
+
+        /*İf Else Statement*/
+        const score = 85;
+
+        if (score >= 90) {
+            console.log('A');
+        } else if (score >= 80) {
+            console.log('B');
+        } else if (score >= 70) {
+            console.log('C');
+        } else if (score >= 60) {
+            console.log('D');
+        } else if (score >= 50) {
+            console.log('E');
+        } else if (score >= 40) {
+            console.log('F');
+        }
+
+        /*Switch Statement*/
+        const day = 7;
+
+        switch (day) {
+            case 1:
+                console.log('Pazartesi');
+                break;
+            case 2:
+                console.log('Salı');
+                break;
+            case 3:
+                console.log('Çarşamba');
+                break;
+            case 4:
+                console.log('Perşembe');
+                break;
+            case 5:
+                console.log('Cuma');
+                break;
+            case 6:
+                console.log('Cumartesi');
+                break;
+            case 7:
+                console.log('Pazar');
+                break;
+            default:
+                console.log('Geçersiz gün');
+        }
+        switch (day) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                console.log('Hafta içi');
+                break;
+            case 6:
+            case 7:
+                console.log('Hafta sonu');
+                break;
+            default:
+                console.log('Geçersiz gün');
+        }
+
+        const color = 'red';
+
+        if (color === 'red') {
+            console.log('Dur');
+        } else if (color === 'yellow') {
+            console.log('Dikkat et');
+        } else if (color === 'green') {
+            console.log('Geç');
+        } else {
+            console.log('Bilinmeyen renk');
+        }
+        switch (color) {
+            case 'red':
+                console.log('Dur');
+                break;
+            case 'yellow':
+                console.log('Dikkat et');
+                break;
+            case 'green':
+                console.log('Geç');
+                break;
+            default:
+                console.log('Bilinmeyen renk');
+        }
+    </script>
+</body>
+</html>

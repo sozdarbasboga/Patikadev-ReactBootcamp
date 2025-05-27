@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+</head>
+<body>
+  
+    <h1>Car</h1>
+    <div id="car-details"></div>
+   <script>   
+const car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2021,
+  color: "Red",
+
+  getDetails: function() {
+    return `Brand: ${this.brand}, Model: ${this.model}, Year: ${this.year}, Color: ${this.color}`;
+  }
+};
+
+console.log("Brand:", car.brand);
+console.log("Model:", car.model);
+console.log("Year:", car.year);
+console.log("Color:", car.color);
+console.log("Car Details:", car.getDetails());
+
+    </script>
+    
+       
+</body>
+</html>

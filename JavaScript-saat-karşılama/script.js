@@ -24,7 +24,6 @@ function showTime() {
 setInterval(showTime, 1000);
 showTime();
 
-// Tema değiştirici
 function changeTheme() {
   document.body.classList.toggle("dark-theme");
   

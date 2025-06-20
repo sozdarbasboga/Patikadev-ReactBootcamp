@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powerfull Fitness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+      <h1 class="logo">💪 POWERFULL</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#" class="btn-join">JOIN US</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="hero-content">
+      <h3>POWERFULL</h3>
+      <h1>Group Practice <br> With Trainer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odit aut iste.</p>
+      <div class="buttons">
+        <a href="#" class="btn-primary">Sign Up</a>
+        <a href="#" class="btn-secondary">Details</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat">325 <br> Course</div>
+      <div class="stat">405 <br> Work Out</div>
+      <div class="stat">305 <br> Working Hour</div>
+      <div class="stat">705 <br> Happy Client</div>
+    </div>
+  </section>
+
+  <!-- Our Classes -->
+  <section id="classes">
+    <h2>OUR CLASSES</h2>
+    <p>Lorem ipsum is not simply random text...</p>
+    <div class="class-buttons">
+      <button onclick="showClass('yoga')">Yoga</button>
+      <button onclick="showClass('group')">Group</button>
+      <button onclick="showClass('solo')">Solo</button>
+      <button onclick="showClass('stretching')">Stretching</button>
+    </div>
+    <div id="class-content">
+      <!-- Dynamic class content will be injected here -->
+    </div>
+  </section>
+
+  <!-- BMI Calculator -->
+  <section id="bmi">
+    <h2>BMI Calculator</h2>
+    <p>Enter your height and weight to calculate your BMI.</p>
+    <input type="number" id="height" placeholder="Your Height (cm)">
+    <input type="number" id="weight" placeholder="Your Weight (kg)">
+    <button onclick="calculateBMI()">Show Your BMI</button>
+    <div id="bmi-result"></div>
+    <img src="img/bmi-scale.png" alt="BMI Scale" class="bmi-scale">
+  </section>
+
+  <!-- Our Trainers -->
+  <section id="trainers">
+    <h2>OUR BEST TRAINERS</h2>
+    <div class="trainer-cards">
+      <div class="trainer-card">
+        <img src="img/trainer1.png" alt="Trainer 1">
+        <div class="trainer-info">Trainer Info 1</div>
+      </div>
+      <div class="trainer-card">
+        <img src="img/trainer2.png" alt="Trainer 2">
+        <div class="trainer-info">Trainer Info 2</div>
+      </div>
+      <div class="trainer-card hover">
+        <img src="img/trainer3.png" alt="Trainer 3">
+        <div class="trainer-info">Jane Doe<br>Cardio Trainer</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Purchase -->
+  <section id="purchase">
+    <h2>PURCHASE FROM US</h2>
+    <div class="product-cards">
+      <!-- Example product -->
+      <div class="product-card">
+        <img src="img/kettlebell.png" alt="Kettlebell">
+        <p>Kettlebell 5kg</p>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Add more cards -->
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="review">
+    <h2>REVIEW CLIENT</h2>
+    <div class="review-cards">
+      <div class="review-card">
+        <p>"Great trainer! Very professional."</p>
+        <strong>Diet Expert, CFO</strong>
+      </div>
+      <div class="review-card">
+        <p>"Helped me get in shape in no time!"</p>
+        <strong>Cardio Trainer, CEO</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>CONTACT US</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <iframe src="https://www.google.com/maps/embed?..." allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

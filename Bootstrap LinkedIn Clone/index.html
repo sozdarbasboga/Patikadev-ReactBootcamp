@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #f4f2ee;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      justify-content: center;
+    }
+
+    .left-sidebar, .right-sidebar {
+      position: sticky;
+      top: 70px;
+    }
+
+    .profile-card img {
+      border-radius: 50%;
+    }
+
+    .card {
+      border-radius: 10px;
+    }
+
+    .post img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm px-3">
+    <a class="navbar-brand" href="#">
+      <img src="img/linkedin.svg" alt="LinkedIn Logo" width="35">
+    </a>
+    <form class="d-flex ms-2 me-auto">
+      <input class="form-control" type="search" placeholder="Arama yap" aria-label="Search">
+    </form>
+    <ul class="navbar-nav d-flex flex-row">
+      <li class="nav-item mx-2 text-center">
+        <i class="bi bi-house-door-fill"></i><br> <small>Ana Sayfa</small>
+      </li>
+      <li class="nav-item mx-2 text-center">
+        <i class="bi bi-people-fill"></i><br> <small>Ağım</small>
+      </li>
+      <li class="nav-item mx-2 text-center">
+        <i class="bi bi-briefcase-fill"></i><br> <small>İş İlanları</small>
+      </li>
+      <li class="nav-item mx-2 text-center">
+        <i class="bi bi-chat-dots-fill"></i><br> <small>Mesajlaşma</small>
+      </li>
+      <li class="nav-item mx-2 text-center">
+        <i class="bi bi-bell-fill"></i><br> <small>Bildirimler</small>
+      </li>
+      <li class="nav-item mx-2 text-center">
+        <img src="img/sözdar.jpg" width="30" class="rounded-circle"><br><small>Ben</small>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container mt-3">
+    <div class="row">
+
+      <!-- Left Sidebar -->
+      <div class="col-md-3">
+        <div class="card p-3 left-sidebar">
+          <div class="text-center">
+            <img src="img/szdr.jpg" width="70">
+            <h6 class="mt-2 mb-0">Sözdar Başboğa</h6>
+            <small class="text-muted">Jr. Frontend Developer</small>
+            <p class="text-muted small">Bursa, Bursa</p>
+            <hr>
+            <p class="mb-1">bağlantı <span class="float-end">3</span></p>
+            <button class="btn btn-outline-primary btn-sm w-100">İletişim ağınızı büyütün</button>
+            <hr>
+            <div class="text-center">
+              <small>Daha verimli şekilde iş arayın</small><br>
+              <a href="#" class="text-warning">0 TRY ile Premium'u deneyin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feed -->
+      <div class="col-md-6">
+        <div class="card mb-3 p-3">
+          <input type="text" class="form-control" placeholder="Gönderi başlatın">
+          <div class="d-flex justify-content-between mt-2">
+            <button class="btn btn-light"><i class="bi bi-camera-video-fill"></i> Video</button>
+            <button class="btn btn-light"><i class="bi bi-image-fill"></i> Fotoğraf</button>
+            <button class="btn btn-light"><i class="bi bi-pencil-square"></i> Yazı yaz</button>
+          </div>
+        </div>
+
+        <div class="card post p-3">
+          <div class="d-flex align-items-center mb-2">
+            <img src="img/sözdar.jpg" width="50" class="me-2">
+            <div>
+              <strong>Yeni Mezun & Yetiştirilmek Üzere İş Duyuruları</strong><br>
+              <small class="text-muted">4 saat · <i class="bi bi-globe"></i></small>
+            </div>
+          </div>
+          <p>#YeniMezun Mühendis #işİlanı <br>#Mühendis #Job #SahaMühendisi #YetiştirilmekÜzere 👉 Open To Work</p>
+          <div class="card bg-light p-2">
+            <div class="d-flex align-items-center">
+              <img src="img/sözdar.jpg" width="45" class="me-2">
+              <div>
+                <strong>Enis Can Ersöz</strong><br>
+                <small class="text-muted">Civil Engineer | İnşaat Mühendisi</small>
+              </div>
+              <button class="btn btn-outline-primary btn-sm ms-auto">+ Takip Et</button>
+            </div>
+            <p class="mt-2 mb-1">Yeni Mezun Mühendis iş ilanı!!!<br>Derin kazı iksa ve temel uygulamaları yapan firma bünyesinde...</p>
+          </div>
+          <div class="d-flex justify-content-around mt-3">
+            <button class="btn btn-light w-100">👍 Beğen</button>
+            <button class="btn btn-light w-100">💬 Yorum</button>
+            <button class="btn btn-light w-100">↪️ Paylaş</button>
+            <button class="btn btn-light w-100">✉️ Gönder</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="col-md-3">
+        <div class="card p-3 right-sidebar">
+          <h6>LinkedIn Haberler</h6>
+          <ul class="list-unstyled">
+            <li><strong>Lululemon lays off corporate staff</strong><br><small class="text-muted">14a önce · 14.655 okuyucu</small></li>
+            <li class="mt-2"><strong>Fed gov calls for July rate cut</strong><br><small class="text-muted">13a önce · 2.673 okuyucu</small></li>
+            <li class="mt-2"><strong>The new rules of office attire</strong><br><small class="text-muted">15a önce · 2.184 okuyucu</small></li>
+            <li class="mt-2"><strong>Hybrid cars make a comeback</strong><br><small class="text-muted">21a önce · 1.843 okuyucu</small></li>
+            <li class="mt-2"><strong>Judge sides with Harvard again</strong><br><small class="text-muted">13a önce · 905 okuyucu</small></li>
+          </ul>
+          <a href="#" class="text-primary small">Daha fazla göster <i class="bi bi-chevron-down"></i></a>
+          <hr>
+          <h6>Bugünün oyunları</h6>
+          <ul class="list-unstyled">
+            <li>🎯 <strong>Zip #96</strong><br><small>Yolu tamamlayın</small></li>
+            <li class="mt-2">🧩 <strong>Tango #257</strong><br><small>Tabloyu uyumlu hâle getirin</small></li>
+            <li class="mt-2">🏆 <strong>Queens #417</strong><br><small>Her bölgeyi taçlandırın</small></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script type="module">
+    import foto from './images/foto.jpg';
+    const imgElement = document.createElement('img');
+    imgElement.src = foto;
+    imgElement.alt = 'Açıklama';
+    document.body.appendChild(imgElement);
+  </script>
+</body>
+</html>

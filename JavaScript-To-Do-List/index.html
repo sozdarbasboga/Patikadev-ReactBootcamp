@@ -1,94 +1,40 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yapılacaklar Listesi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome ekleyelim -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            background-color: #FF8C00; /* Turuncu arka plan */
-        }
-        .container {
-            max-width: 800px;
-            margin-top: 50px;
-        }
-        .logo {
-            width: 300px;
-            margin-bottom: 20px;
-        }
-        .list-group-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #fff;
-            margin-bottom: 5px;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-        }
-        .close {
-            color: #6c757d;
-            cursor: pointer;
-            font-size: 1.2rem;
-            padding: 0 10px;
-            opacity: 1;
-        }
-        .checked {
-            text-decoration: line-through;
-            background-color: #979b9b !important;
-            color: white;
-        }
-        .input-group {
-            margin-bottom: 20px;
-        }
-        .form-control {
-            border: none;
-            padding: 10px 15px;
-            font-size: 16px;
-        }
-        .form-control::placeholder {
-            color: #6c757d;
-        }
-        .btn-add {
-            background-color: #f8f9fa;
-            border: none;
-            padding: 10px 25px;
-            color: #6c757d;
-        }
-        .toast-container {
-            z-index: 1050;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yapılacaklar Listesi</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="text-center">
-            <img src="https://raw.githubusercontent.com/Kodluyoruz/taskforce/main/css/odev1/logo.png" alt="Kodluyoruz" class="logo">
-            <h1 class="text-white mb-4">Yapılacaklar Listesi</h1>
-        </div>
 
-        <div class="input-group mb-4">
-            <input type="text" id="task" class="form-control" placeholder="Bugün ne yapacaksın?">
-            <button class="btn btn-add" onclick="addTask()">Ekle</button>
-        </div>
-
-        <ul id="taskList" class="list-group"></ul>
+  <div class="container">
+    <div class="header">
+      <img src="kodluyoruz.png" alt="Kodluyoruz Logo" height="60px" />
+      <h2>Yapılacaklar Listesi</h2>
+      <div class="input-area">
+      <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
+      <span onclick="addTask()" class="button">Ekle</span>
     </div>
-
-    <!-- Toast bildirimi -->
-    <div class="toast-container position-fixed top-0 end-0 p-3">
-        <div id="liveToast" class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="d-flex">
-                <div class="toast-body"></div>
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-        </div>
     </div>
+    <ul id="taskList"></ul>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <!-- Bootstrap Toast -->
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1055;">
+      <div id="liveToast" class="toast text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">Mesaj</div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto  " data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle (Popper dahil) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
